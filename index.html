@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPC App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- BODY MPC -->
+        <div class="body-mpc">
+          <div class="mpc-half">
+            <!-- LEFT HALF -->
+            <div class="left-half">
+              <div class="left-top">
+                <div class="mpc-screen">
+                  <div class="screen">screen with preset</div>
+                </div>
+              </div>
+              <div class="left-bottom"></div>
+            </div>
+            <!-- RIGHT HALF -->
+            <div class="right-half">
+              <div class="mpc-title">
+                <img
+                  class="mpc-logo"
+                  src="/images/akai-log.png"
+                  alt="akai-logo"
+                />
+                <p class="logo-text">MPC 2000XL</p>
+              </div>
+              <div class="mpc-set">setting here</div>
+              <!-- MPC PAD -->
+              <div class="mpc-pad">
+                <div class="row-pad">
+                  <div data-pad="81" class="pad">
+                    <kbd>Q</kbd><span>kick</span>
+                  </div>
+                  <div data-pad="87" class="pad pad-2">
+                    <kbd>W</kbd><span>snare</span>
+                  </div>
+                  <div data-pad="69" class="pad pad-3">
+                    <kbd>E</kbd><span>hi-hat</span>
+                  </div>
+                  <div data-pad="82" class="pad pad-4">
+                    <kbd>R</kbd><span>808</span>
+                  </div>
+                </div>
+                <div class="row-pad">
+                  <div data-pad="81" class="pad pad-1">A</div>
+                  <div data-pad="81" class="pad pad-2">S</div>
+                  <div data-pad="81" class="pad pad-3">D</div>
+                  <div data-pad="81" class="pad pad-4">F</div>
+                </div>
+                <div class="row-pad">
+                  <div data-pad="81" class="pad pad-1">Z</div>
+                  <div data-pad="81" class="pad pad-2">X</div>
+                  <div data-pad="81" class="pad pad-3">C</div>
+                  <div data-pad="81" class="pad pad-4">V</div>
+                </div>
+                <div class="row-pad">
+                  <div data-pad="81" class="pad pad-1">U</div>
+                  <div data-pad="81" class="pad pad-2">I</div>
+                  <div data-pad="81" class="pad pad-3">O</div>
+                  <div data-pad="81" class="pad pad-4">P</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio data-pad="81" src="sounds/kick-1.wav"></audio>
+    <audio data-pad="87" src="sounds/snare-1.wav"></audio>
+    <audio data-pad="69" src="sounds/hh-1.wav"></audio>
+    <audio data-pad="82" src="sounds/808-1.wav"></audio>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
