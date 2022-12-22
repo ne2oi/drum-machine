@@ -17,10 +17,18 @@
             <div class="left-half">
               <div class="left-top">
                 <div class="mpc-screen">
-                  <div class="screen">screen with preset</div>
+                  <div id="bank-name" class="screen">Bank-1</div>
                 </div>
               </div>
-              <div class="left-bottom"></div>
+              <!-- LEFT BOTTOM -->
+              <div class="left-bottom">
+                <div class="bank-wrapper">
+                  <div id="previous-bank" class="previous-bank">
+                    previous-bank
+                  </div>
+                  <div id="next-bank" class="next-bank">next-bank</div>
+                </div>
+              </div>
             </div>
             <!-- RIGHT HALF -->
             <div class="right-half">
@@ -50,22 +58,22 @@
                   </div>
                 </div>
                 <div class="row-pad">
-                  <div data-pad="81" class="pad pad-1">A</div>
-                  <div data-pad="81" class="pad pad-2">S</div>
-                  <div data-pad="81" class="pad pad-3">D</div>
-                  <div data-pad="81" class="pad pad-4">F</div>
+                  <div data-pad="81" class="pad">A</div>
+                  <div data-pad="81" class="pad">S</div>
+                  <div data-pad="81" class="pad">D</div>
+                  <div data-pad="81" class="pad">F</div>
                 </div>
                 <div class="row-pad">
-                  <div data-pad="81" class="pad pad-1">Z</div>
-                  <div data-pad="81" class="pad pad-2">X</div>
-                  <div data-pad="81" class="pad pad-3">C</div>
-                  <div data-pad="81" class="pad pad-4">V</div>
+                  <div data-pad="81" class="pad">Z</div>
+                  <div data-pad="81" class="pad">X</div>
+                  <div data-pad="81" class="pad">C</div>
+                  <div data-pad="81" class="pad">V</div>
                 </div>
                 <div class="row-pad">
-                  <div data-pad="81" class="pad pad-1">U</div>
-                  <div data-pad="81" class="pad pad-2">I</div>
-                  <div data-pad="81" class="pad pad-3">O</div>
-                  <div data-pad="81" class="pad pad-4">P</div>
+                  <div data-pad="81" class="pad">U</div>
+                  <div data-pad="81" class="pad">I</div>
+                  <div data-pad="81" class="pad">O</div>
+                  <div data-pad="81" class="pad">P</div>
                 </div>
               </div>
             </div>
@@ -74,10 +82,17 @@
       </div>
     </div>
 
-    <audio data-pad="81" src="sounds/kick-1.wav"></audio>
-    <audio data-pad="87" src="sounds/snare-1.wav"></audio>
-    <audio data-pad="69" src="sounds/hh-1.wav"></audio>
-    <audio data-pad="82" src="sounds/808-1.wav"></audio>
+    <!-- BANK 1 -->
+    <audio data-pad="81" src="sounds/bank-1/kick.wav"></audio>
+    <audio data-pad="87" src="sounds/bank-1/snare.wav"></audio>
+    <audio data-pad="69" src="sounds/bank-1/hh.wav"></audio>
+    <audio data-pad="82" src="sounds/bank-1/808.wav"></audio>
+
+    <!-- BANK 2 -->
+    <audio data-pad="81" src="sounds/bank-2/kick.wav"></audio>
+    <audio data-pad="87" src="sounds/bank-2/snare.wav"></audio>
+    <audio data-pad="69" src="sounds/bank-2/hh.wav"></audio>
+    <audio data-pad="82" src="sounds/bank-2/808.wav"></audio>
 
     <script src="js/script.js"></script>
   </body>
