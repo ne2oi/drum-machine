@@ -82,7 +82,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.previous-bank,
+.previous-bank {
+  border: 5px solid black;
+  background-color: #7e8c8f;
+  padding: 5px 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .next-bank {
   border: 5px solid black;
   background-color: #7e8c8f;
